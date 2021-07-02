@@ -37,11 +37,13 @@ class Tips extends StatelessWidget {
                   color: color,
                   alignment: Alignment.topCenter,
                   padding: EdgeInsets.all(8.0),
-                  height: MediaQuery.of(context).size.height * 0.2,
+                  height: MediaQuery.of(context).size.height * 0.25,
                   width: MediaQuery.of(context).size.width * 0.6,
-                  child: Text(
-                    translate == "" ? "抱歉，暂无翻译～" : translate,
-                    style: TextStyle(fontSize: 20),
+                  child: SingleChildScrollView(
+                    child: Text(
+                      translate == "" ? "抱歉，暂无翻译～" : translate,
+                      style: TextStyle(fontSize: 20),
+                    ),
                   ),
                 ),
               ),

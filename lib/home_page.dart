@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Tag(matchTags: poem.matchTags),
           SizedBox(height: 20),
           Container(
-            height: 4 * Box.height,
+            height: 3 * Box.height,
             child: Stack(
               children: List.generate(
                 _charsList.length,
